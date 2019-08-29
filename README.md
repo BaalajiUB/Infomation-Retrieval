@@ -22,5 +22,9 @@ Programming language: Java
   TREC_eval is used to get various matrices of the IR model to check its performance. The evaluation measure primarily considered in this project is MAP (Mean Average Precision). To improve performance of the models, the tunable parameters in each model are modified and each model had a final MAP value of 0.7 . Further techniques to improve the performance like query expansion, query boosting, translation (since the queries the models are tested are in 3 different languages) are discussed.
   
   
-  
+  #### 4 Tweelytics
+   A team project. A web application is created to facilitate users to search the tweets stored and indexed in Solr. It takes in a query and returns the tweets matching the query along with the trending hashtags among the overall tweet collection on entering the web application and on querying, the trending hashtags within the query results. Additional filters like language, geo-location and topic are also provided along with the query. Then a page is included with statistical summary of the distribution of the query results across the features: language, location, date-of-posting and topics.  The project is done using Spring Boot framework. 
+My contribution is fetching of the trending hashtags based on the situation and sending it to the UI component and providing the faceted results of the query for visualization of the tweets' demographic distribution.
+    
+Programming languate: Java
   
