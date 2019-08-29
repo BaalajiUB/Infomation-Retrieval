@@ -16,3 +16,11 @@ Note: No in-built functions used for intersection and union of the posting lists
 
 Programming language: Java
 
+#### 3 Evaluation of IR models
+
+  3 IR models VSM (Vector Space Model), Okapi BM25 and DFR (Divergence from Randomness) are implemented in 3 seperate Solr cores and the top 20 query results are retrieved from each model along with the relevance scores of the retrieved documents. The resultant JSON is converted to TREC_eval (software used to evaluate an IR model) acceptable format.
+  TREC_eval is used to get various matrices of the IR model to check its performance. The evaluation measure primarily considered in this project is MAP (Mean Average Precision). To improve performance of the models, the tunable parameters in each model are modified and each model had a final MAP value of 0.7 . Further techniques to improve the performance like query expansion, query boosting, translation (since the queries the models are tested are in 3 different languages) are discussed.
+  
+  
+  
+  
