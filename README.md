@@ -23,7 +23,7 @@ Programming language: Java
   
   
   #### 4 Tweelytics
-   A team project. A web application is created to facilitate users to search the tweets stored and indexed in Solr. It takes in a query and returns the tweets matching the query along with the trending hashtags among the overall tweet collection on entering the web application and on querying, the trending hashtags within the query results. Additional filters like language, geo-location and topic are also provided along with the query. Then a page is included with statistical summary of the distribution of the query results across the features: language, location, date-of-posting and topics.  The project is done using Spring Boot framework. 
+   A team project. A web application is created to facilitate users to search the tweets stored and indexed in Solr. It takes in a query and returns the tweets matching the query along with each result's sentiment (1 among the 3 classifications it is predicted to be in) and the trending hashtags among the overall tweet collection on entering the web application and on querying, the trending hashtags within the query results. Additional filters like language, geo-location and topic are also provided along with the query. Then a page is included with statistical summary of the distribution of the query results across the features: language, location, date-of-posting and topics.  The project is done using Spring Boot framework. 
 My contribution is fetching of the trending hashtags based on the situation and sending it to the UI component and providing the faceted results of the query for visualization of the tweets' demographic distribution.
     
 Programming languate: Java
