@@ -12,7 +12,7 @@ Using Solr UI, the top 10 words used and top 10 hashtags are identified from all
 
 2) Boolean Query and Inverted Index
 
-    Given the Lucene index of the MedPub corpus, a postings list is created as linked list of term: document ids. The created postings list is used to implement TAAT (Term-at-a-time) and DAAT (Document-at-a-time) boolean query processing with "Skip-pointers" to reduce the run-time. Then for various queries, the number of comparisons made using TAAT and DAAT are recorded and compared. 
+  Given the Lucene index of the MedPub corpus, a postings list is created as linked list of term: document ids. The created postings list is used to implement TAAT (Term-at-a-time) and DAAT (Document-at-a-time) boolean query processing with "Skip-pointers" to reduce the run-time. Then for various queries, the number of comparisons made using TAAT and DAAT are recorded and compared. 
 Note: No in-built functions used for intersection and union of the posting lists.
 
 Programming language: Java
